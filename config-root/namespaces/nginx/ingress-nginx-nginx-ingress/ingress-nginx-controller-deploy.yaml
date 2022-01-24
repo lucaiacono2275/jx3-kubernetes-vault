@@ -22,7 +22,7 @@ spec:
       app.kubernetes.io/name: ingress-nginx
       app.kubernetes.io/instance: nginx-ingress
       app.kubernetes.io/component: controller
-  replicas: 3
+  replicas: 1
   revisionHistoryLimit: 10
   minReadySeconds: 0
   template:
@@ -51,7 +51,7 @@ spec:
             - --validating-webhook=:8443
             - --validating-webhook-certificate=/usr/local/certificates/cert
             - --validating-webhook-key=/usr/local/certificates/key
-            - --default-ssl-certificate=jx/tls-ihsws-cloud-s
+            - --default-ssl-certificate=jx/tls-ihsws-cloud-p
             - --publish-service=nginx/ingress-nginx-controller
           securityContext:
             capabilities:
