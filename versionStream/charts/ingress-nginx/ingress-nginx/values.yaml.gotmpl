@@ -2,6 +2,8 @@ fullnameOverride: ingress-nginx
 
 controller:
   replicaCount: 3
+  hostNetwork: true
+  setAsDefaultIngress: true
   extraArgs:
     publish-service: nginx/ingress-nginx-controller
 {{- if .Values.jxRequirements.ingress.tls.enabled }}
