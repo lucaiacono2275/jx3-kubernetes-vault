@@ -10,6 +10,15 @@ ingress:
     # message to display with an appropriate context why the authentication is required
     nginx.ingress.kubernetes.io/auth-realm: 'Authentication Required - Jenkins X Pipeline Dashboard'
 
+{{- if and (.Values.jxRequirements.ingress.tls.enabled) }}
+  {{ if .Values.jxRequirements.ingress.tls.production }}
+    cert-manager.io/issuer: "letsencrypt-production"
+  {{- else }}
+    cert-manager.io/issuer: "letsencrypt-staging"
+  {{- end}}
+{{- end }}
+    
+
   apiVersion: "networking.k8s.io/v1"
 
   hosts:
