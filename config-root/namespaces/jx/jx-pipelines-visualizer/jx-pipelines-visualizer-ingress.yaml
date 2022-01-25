@@ -29,6 +29,6 @@ spec:
                 port:
                   name: http
   tls:
-    - secretName: tls-ihsws-cloud-s
+    - secretName: tls-ihsws-cloud-p
       hosts:
         - dashboard-jx.ihsws.cloud
