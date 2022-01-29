@@ -27,7 +27,7 @@ spec:
     namespaceSubDomain: -jx.
     tls:
       email: luca.iacono@gmail.com
-      enabled: true
+      enabled: false
       production: false
   pipelineUser:
     username: lucaiacono2275
