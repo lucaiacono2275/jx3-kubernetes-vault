@@ -43,8 +43,8 @@ jxRequirements:
     namespaceSubDomain: -tekton-pipelines.
     tls:
       email: luca.iacono@gmail.com
-      enabled: true
-      production: true
+      enabled: false
+      production: false
   pipelineUser:
     username: lucaiacono2275
   repository: bucketrepo
@@ -54,7 +54,7 @@ jxRequirements:
 jxRequirementsIngressExternalDNS:
   enabled: false
 jxRequirementsIngressTLS:
-  enabled: true
+  enabled: false
 jxRequirementsKuberhealthy:
   enabled: false
 jxRequirementsTLSCheck:

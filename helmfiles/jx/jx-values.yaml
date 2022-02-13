@@ -43,7 +43,7 @@ jxRequirements:
     namespaceSubDomain: -jx.
     tls:
       email: luca.iacono@gmail.com
-      enabled: true
+      enabled: false
       production: false
   pipelineUser:
     username: lucaiacono2275
@@ -54,7 +54,7 @@ jxRequirements:
 jxRequirementsIngressExternalDNS:
   enabled: false
 jxRequirementsIngressTLS:
-  enabled: true
+  enabled: false
 jxRequirementsKuberhealthy:
   enabled: false
 jxRequirementsTLSCheck:

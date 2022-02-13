@@ -20,7 +20,3 @@ spec:
                 port:
                   number: 80
       host: bucketrepo-jx.ihsws.cloud
-  tls:
-    - hosts:
-        - bucketrepo-jx.ihsws.cloud
-      secretName: "tls-ihsws-cloud-p"
